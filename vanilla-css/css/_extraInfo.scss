@@ -1,0 +1,57 @@
+.extra-info-payment {
+  background: $lightGrey;
+  margin: 3rem 0 0 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+
+  & .extra-info-bar {
+    height: 5px;
+    background: $brown;
+    width: 10%;
+    margin-bottom: 1rem;
+  }
+
+  & .extra-info-title {
+    color: $darkGreen;
+    font-size: 1.3rem;
+    width: 60%;
+  }
+
+  & .extra-info-desc {
+    font-size: 0.7rem;
+    color: $blackBluish;
+    width: 60%;
+    margin-top: 1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    background: $lightGrey;
+    margin: 3rem 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, 300px);
+    padding: 2rem 0;
+
+    & .extra-info-bar {
+      height: 5px;
+      background: $brown;
+      width: 10%;
+      margin-bottom: 1rem;
+    }
+
+    & .extra-info-title {
+      color: $darkGreen;
+      font-size: 1.3rem;
+      width: 100%;
+    }
+
+    & .extra-info-desc {
+      font-size: 0.7rem;
+      color: $blackBluish;
+      width: 100%;
+      margin-top: 0rem;
+    }
+  }
+}

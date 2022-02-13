@@ -1,0 +1,189 @@
+.contact {
+  height: 260px;
+  background: $white;
+  box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.5);
+  background-image: url("../images/rectangle.png");
+  background-repeat: repeat;
+  opacity: 0.05;
+  margin-top: 5rem;
+}
+
+.contact-details {
+  margin-top: -25%;
+  padding: 4rem 2rem;
+
+  & .contact-title {
+    color: $darkGreen;
+    font-weight: 500;
+    font-size: 1.5rem;
+    width: 40%;
+  }
+
+  & .contact-info {
+    color: $blackBluish;
+    margin: 1.7rem 0;
+  }
+
+  & .contact-btn {
+    background: $darkGreen;
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.form-section {
+  position: relative;
+  & .form {
+    padding: 3rem;
+    background: $mediumGreen;
+    width: 28%;
+    position: absolute;
+    right: 13%;
+    margin-top: -25%;
+  }
+
+  @media only screen and (max-width: 1000px) {
+    & .form {
+      margin-top: -40%;
+    }
+  }
+
+  & .form-heading {
+    color: $white;
+  }
+
+  & .form-desc {
+    margin: 3rem 0;
+    color: $white;
+    font-size: 0.8rem;
+  }
+
+  & label {
+    font-size: 0.7rem;
+    color: $white;
+    display: block;
+    margin: 0.4rem 0;
+  }
+
+  & input {
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed $white;
+    background: transparent;
+    color: $white;
+  }
+  & input:active,
+  & input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed $white;
+    background: transparent;
+    color: $white;
+  }
+
+  & .input-gapped {
+    margin: 4rem 0 0rem 0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact {
+    height: 0px;
+    background: $white;
+    box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.1);
+    background-image: url("../images/rectangle.png");
+    background-repeat: repeat;
+    opacity: 1;
+
+    .contact-details {
+      margin-top: 30%;
+
+      & .contact-title {
+        color: $darkGreen;
+        font-weight: 500;
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      & .contact-info {
+        color: $blackBluish;
+        margin: 1rem 0;
+      }
+
+      & .contact-btn {
+        background: $darkGreen;
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .form-section {
+    & .form {
+      padding: 3rem;
+      background: $mediumGreen;
+      position: relative;
+      display: none;
+    }
+
+    & .form-heading {
+      color: $white;
+    }
+
+    & .form-desc {
+      margin: 3rem 0;
+      color: $white;
+      font-size: 0.8rem;
+    }
+
+    & label {
+      font-size: 0.7rem;
+      color: $white;
+      display: block;
+      margin: 0.4rem 0;
+    }
+
+    & input {
+      border: none;
+      outline: none;
+      border-bottom: 1px dashed $white;
+      background: transparent;
+      color: $white;
+    }
+    & input:active,
+    & input:focus {
+      border: none;
+      outline: none;
+      border-bottom: 1px dashed $white;
+      background: transparent;
+      color: $white;
+    }
+
+    & .input-gapped {
+      margin: 4rem 0 0rem 0;
+    }
+  }
+
+  .contact-details {
+    margin-top: 1%;
+    padding: 0 2rem;
+
+    & .contact-title {
+      color: $darkGreen;
+      font-weight: 500;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    & .contact-info {
+      color: $blackBluish;
+      margin: 1.7rem 0;
+    }
+
+    & .contact-btn {
+      background: $darkGreen;
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.solutions {
+  background: $mediumGreen;
+  height: 200px;
+  margin: 2rem 0 0 0;
+
+  & .solutions-background {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/rectangle.png");
+    background-repeat: repeat;
+    opacity: 0.1;
+  }
+
+  @media only screen and (max-width: 768px) {
+    background: $mediumGreen;
+    height: 100px;
+    margin: 0;
+
+    & .solutions-background {
+      width: 100%;
+      height: 100%;
+      background-image: url("../images/rectangle.png");
+      background-repeat: repeat;
+      opacity: 0.1;
+    }
+  }
+}
+
+.solutions-desc {
+  & .solutions-title {
+    color: $white;
+    margin-top: -13%;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+}
+
+.solution-content {
+  & .solutions-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 2rem 1rem 2rem;
+
+    & .solutions-section {
+      background: $white;
+      padding: 3rem 2rem;
+      box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.1);
+      margin-right: 1rem;
+    }
+
+    & .solutions-bar {
+      height: 5px;
+      background: $brown;
+      width: 20%;
+      margin-bottom: 1.5rem;
+    }
+
+    & .solutions-title {
+      font-size: 1.3rem;
+      color: $blackBluish;
+      font-weight: 500;
+      width: 60%;
+    }
+
+    & .solutions-content {
+      font-size: 0.7rem;
+      margin: 2rem 0;
+      width: 60%;
+      color: $blackBluish;
+      background: transparent;
+    }
+
+    & .btn-outline-dark {
+      color: $blackBluish;
+      border: 1px solid $blackBluish;
+      overflow: hidden;
+      box-shadow: none;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    & .solutions-info {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem 0 1rem 0;
+
+      & .solutions-section {
+        border-top: 1px solid red;
+        background: $white;
+        padding: 3rem 2rem;
+        box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.1);
+        margin-right: 0;
+        margin-bottom: 1rem;
+      }
+
+      & .solutions-bar {
+        height: 5px;
+        background: $brown;
+        width: 20%;
+        margin-bottom: 1.5rem;
+      }
+
+      & .solutions-title {
+        font-size: 1rem;
+        color: $blackBluish;
+        font-weight: 500;
+        width: 100%;
+      }
+
+      & .solutions-content {
+        font-size: 0.7rem;
+        margin: 2rem 0;
+        width: 100%;
+        color: $blackBluish;
+        background: transparent;
+      }
+
+      & .btn-outline-dark {
+        color: $blackBluish;
+        border: 1px solid $blackBluish;
+        overflow: hidden;
+        box-shadow: none;
+      }
+    }
+  }
+}
